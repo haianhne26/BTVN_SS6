@@ -1,0 +1,8 @@
+CREATE TABLE Sach (
+    MaSach INT PRIMARY KEY AUTO_INCREMENT,
+    TenSach VARCHAR(200) NOT NULL,
+    NamXuatBan INT,
+    MaTacGia INT,
+    FOREIGN KEY (MaTacGia) REFERENCES TacGia(MaTacGia)
+);
+
